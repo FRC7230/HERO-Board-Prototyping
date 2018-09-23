@@ -1,0 +1,32 @@
+C:\Users\Dell User\source\repos\Hero Simple Application5\Hero Simple Application5\bin\Debug\le\Hero Simple Application5.exe
+C:\Users\Dell User\source\repos\Hero Simple Application5\Hero Simple Application5\bin\Debug\be\Hero Simple Application5.exe
+C:\Users\Dell User\source\repos\Hero Simple Application5\Hero Simple Application5\bin\Debug\le\Hero Simple Application5.pdb
+C:\Users\Dell User\source\repos\Hero Simple Application5\Hero Simple Application5\bin\Debug\be\Hero Simple Application5.pdb
+C:\Users\Dell User\source\repos\Hero Simple Application5\Hero Simple Application5\bin\Debug\Hero Simple Application5.exe
+C:\Users\Dell User\source\repos\Hero Simple Application5\Hero Simple Application5\bin\Debug\Hero Simple Application5.pdb
+C:\Users\Dell User\source\repos\Hero Simple Application5\Hero Simple Application5\bin\Debug\le\Hero Simple Application5.pe
+C:\Users\Dell User\source\repos\Hero Simple Application5\Hero Simple Application5\bin\Debug\le\Hero Simple Application5.pdbx
+C:\Users\Dell User\source\repos\Hero Simple Application5\Hero Simple Application5\bin\Debug\be\Hero Simple Application5.pe
+C:\Users\Dell User\source\repos\Hero Simple Application5\Hero Simple Application5\bin\Debug\be\Hero Simple Application5.pdbx
+C:\Users\Dell User\source\repos\Hero Simple Application5\Hero Simple Application5\bin\Debug\LE\CTRE.pe
+C:\Users\Dell User\source\repos\Hero Simple Application5\Hero Simple Application5\bin\Debug\LE\ctre_netmf_native.pe
+C:\Users\Dell User\source\repos\Hero Simple Application5\Hero Simple Application5\bin\Debug\BE\CTRE.pe
+C:\Users\Dell User\source\repos\Hero Simple Application5\Hero Simple Application5\bin\Debug\BE\ctre_netmf_native.pe
+C:\Users\Dell User\source\repos\Hero Simple Application5\Hero Simple Application5\bin\Debug\LE\CTRE.pdbx
+C:\Users\Dell User\source\repos\Hero Simple Application5\Hero Simple Application5\bin\Debug\LE\ctre_netmf_native.pdbx
+C:\Users\Dell User\source\repos\Hero Simple Application5\Hero Simple Application5\bin\Debug\BE\CTRE.pdbx
+C:\Users\Dell User\source\repos\Hero Simple Application5\Hero Simple Application5\bin\Debug\BE\ctre_netmf_native.pdbx
+C:\Users\Dell User\source\repos\Hero Simple Application5\Hero Simple Application5\bin\Debug\CTRE.dll
+C:\Users\Dell User\source\repos\Hero Simple Application5\Hero Simple Application5\bin\Debug\ctre_netmf_native.dll
+C:\Users\Dell User\source\repos\Hero Simple Application5\Hero Simple Application5\bin\Debug\CTRE.pdb
+C:\Users\Dell User\source\repos\Hero Simple Application5\Hero Simple Application5\bin\Debug\ctre_netmf_native.pdb
+C:\Users\Dell User\source\repos\Hero Simple Application5\Hero Simple Application5\obj\Debug\Hero Simple Application5.csprojAssemblyReference.cache
+C:\Users\Dell User\source\repos\Hero Simple Application5\Hero Simple Application5\obj\Debug\TinyCLR_DebugReferences.cache
+C:\Users\Dell User\source\repos\Hero Simple Application5\Hero Simple Application5\obj\Debug\Hero Simple Application5.csproj.CoreCompileInputs.cache
+C:\Users\Dell User\source\repos\Hero Simple Application5\Hero Simple Application5\obj\Debug\be\Hero Simple Application5.pe
+C:\Users\Dell User\source\repos\Hero Simple Application5\Hero Simple Application5\obj\Debug\be\Hero Simple Application5.pdbx
+C:\Users\Dell User\source\repos\Hero Simple Application5\Hero Simple Application5\obj\Debug\le\Hero Simple Application5.pe
+C:\Users\Dell User\source\repos\Hero Simple Application5\Hero Simple Application5\obj\Debug\le\Hero Simple Application5.pdbx
+C:\Users\Dell User\source\repos\Hero Simple Application5\Hero Simple Application5\obj\Debug\Hero Simple Application5.csproj.CopyComplete
+C:\Users\Dell User\source\repos\Hero Simple Application5\Hero Simple Application5\obj\Debug\Hero Simple Application5.exe
+C:\Users\Dell User\source\repos\Hero Simple Application5\Hero Simple Application5\obj\Debug\Hero Simple Application5.pdb
