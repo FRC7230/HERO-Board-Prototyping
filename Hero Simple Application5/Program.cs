@@ -14,8 +14,7 @@ namespace Hero_Simple_Application5
         public static void Main()
         {
 
-            Talon1.Set(CTRE.Phoenix.MotorControl.ControlMode.PercentOutput, _gamepad.GetAxis(1)+_gamepad.GetAxis(2));
-            Talon2.Set(CTRE.Phoenix.MotorControl.ControlMode.PercentOutput, _gamepad.GetAxis(1)-_gamepad.GetAxis(2));
+            
             
 
             uint period = 50000; //period between pulses
@@ -36,6 +35,9 @@ namespace Hero_Simple_Application5
             while(true)
                 {
                 pwm_9.Duration = (uint)_gamepad.GetAxis(1) * 50000;
+
+                Talon1.Set(CTRE.Phoenix.MotorControl.ControlMode.PercentOutput, _gamepad.GetAxis(1)+_gamepad.GetAxis(2));
+                Talon2.Set(CTRE.Phoenix.MotorControl.ControlMode.PercentOutput, _gamepad.GetAxis(1)-_gamepad.GetAxis(2));
 
                 xButton = _gamepad.GetButton(1);
                 aButton = _gamepad.GetButton(2);
