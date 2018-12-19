@@ -5,25 +5,20 @@ using Microsoft.SPOT.Hardware;
 
 namespace Hero_Simple_Application5
 {
-    
     public class Program
     {
-                    static CTRE.Phoenix.Controller.GameController _gamepad = new CTRE.Phoenix.Controller.GameController(CTRE.Phoenix.UsbHostDevice.GetInstance(0));
-                    static CTRE.Phoenix.MotorControl.CAN.TalonSRX Talon1 = new CTRE.Phoenix.MotorControl.CAN.TalonSRX(1);
+        static CTRE.Phoenix.Controller.GameController _gamepad = new CTRE.Phoenix.Controller.GameController(CTRE.Phoenix.UsbHostDevice.GetInstance(0));
+        static CTRE.Phoenix.MotorControl.CAN.TalonSRX Talon1 = new CTRE.Phoenix.MotorControl.CAN.TalonSRX(1);
         static CTRE.Phoenix.MotorControl.CAN.TalonSRX Talon2 = new CTRE.Phoenix.MotorControl.CAN.TalonSRX(2);
+
         public static void Main()
         {
-
-            
-            
-
             uint period = 50000; //period between pulses
             uint duration = 1500; //duration of pulse
             PWM pwm_9 = new PWM(CTRE.HERO.IO.Port3.PWM_Pin9, period, duration,
             PWM.ScaleFactor.Microseconds, false);
 
             pwm_9.Start();
-        
 
             OutputPort solonoid_extend = new OutputPort(CTRE.HERO.IO.Port5.Pin4, false);
             OutputPort solonoid_retract = new OutputPort(CTRE.HERO.IO.Port5.Pin6, false);
@@ -32,12 +27,13 @@ namespace Hero_Simple_Application5
             bool xButton = true;
             bool aButton = true;
             bool bButton = true;
-            while(true)
-                {
+
+            while (true)
+            {
                 pwm_9.Duration = (uint)_gamepad.GetAxis(1) * 50000;
 
-                Talon1.Set(CTRE.Phoenix.MotorControl.ControlMode.PercentOutput, _gamepad.GetAxis(1)+_gamepad.GetAxis(2));
-                Talon2.Set(CTRE.Phoenix.MotorControl.ControlMode.PercentOutput, _gamepad.GetAxis(1)-_gamepad.GetAxis(2));
+                Talon1.Set(CTRE.Phoenix.MotorControl.ControlMode.PercentOutput, _gamepad.GetAxis(1) + _gamepad.GetAxis(2));
+                Talon2.Set(CTRE.Phoenix.MotorControl.ControlMode.PercentOutput, _gamepad.GetAxis(1) - _gamepad.GetAxis(2));
 
                 xButton = _gamepad.GetButton(1);
                 aButton = _gamepad.GetButton(2);
@@ -47,11 +43,9 @@ namespace Hero_Simple_Application5
                 solonoid_extend.Write(aButton);
                 solonoid_retract.Write(bButton);
 
-
-
-                Thread.Sleep(10); 
-                }
+                Thread.Sleep(10);
             }
         }
     }
+}
 
