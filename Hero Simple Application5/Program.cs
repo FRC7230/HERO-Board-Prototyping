@@ -3,7 +3,7 @@ using System.Threading;
 using Microsoft.SPOT;
 using Microsoft.SPOT.Hardware;
 
-namespace Hero_Simple_Application5
+namespace Hero_Simple_Application5 //does this work?
 {
     
     public class Program
@@ -15,7 +15,7 @@ namespace Hero_Simple_Application5
         {
 
             Talon1.Set(CTRE.Phoenix.MotorControl.ControlMode.PercentOutput, _gamepad.GetAxis(1)+_gamepad.GetAxis(2));
-            Talon2.Set(CTRE.Phoenix.MotorControl.ControlMode.PercentOutput, _gamepad.GetAxis(1)+_gamepad.GetAxis(2));
+            Talon2.Set(CTRE.Phoenix.MotorControl.ControlMode.PercentOutput, _gamepad.GetAxis(1)-_gamepad.GetAxis(2));
             
 
             uint period = 50000; //period between pulses
@@ -30,10 +30,10 @@ namespace Hero_Simple_Application5
             OutputPort solonoid_retract = new OutputPort(CTRE.HERO.IO.Port5.Pin6, false);
             OutputPort compressor = new OutputPort(CTRE.HERO.IO.Port5.Pin8, false);
 
-            bool xButton = true;
-            bool aButton = true;
+            bool xButton = true; //compressor
+            bool aButton = true; 
             bool bButton = true;
-            while(true)
+            while(true) //feeds us info
                 {
                 pwm_9.Duration = (uint)_gamepad.GetAxis(1) * 50000;
 
