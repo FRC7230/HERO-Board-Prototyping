@@ -9,13 +9,12 @@ namespace Hero_Simple_Application5 //does this work?
     public class Program
     {
                     static CTRE.Phoenix.Controller.GameController _gamepad = new CTRE.Phoenix.Controller.GameController(CTRE.Phoenix.UsbHostDevice.GetInstance(0));
-                    static CTRE.Phoenix.MotorControl.CAN.TalonSRX Talon1 = new CTRE.Phoenix.MotorControl.CAN.TalonSRX(1);
-        static CTRE.Phoenix.MotorControl.CAN.TalonSRX Talon2 = new CTRE.Phoenix.MotorControl.CAN.TalonSRX(2);
+                    static CTRE.Phoenix.MotorControl.CAN.TalonSRX Talon1 = new CTRE.Phoenix.MotorControl.CAN.TalonSRX(3);
+        static CTRE.Phoenix.MotorControl.CAN.TalonSRX Talon2 = new CTRE.Phoenix.MotorControl.CAN.TalonSRX(4);
         public static void Main()
         {
 
-            Talon1.Set(CTRE.Phoenix.MotorControl.ControlMode.PercentOutput, _gamepad.GetAxis(1)+_gamepad.GetAxis(2));
-            Talon2.Set(CTRE.Phoenix.MotorControl.ControlMode.PercentOutput, _gamepad.GetAxis(1)-_gamepad.GetAxis(2));
+         
             
 
             uint period = 50000; //period between pulses
@@ -35,6 +34,9 @@ namespace Hero_Simple_Application5 //does this work?
             bool bButton = true;
             while(true) //feeds us info
                 {
+                Talon1.Set(CTRE.Phoenix.MotorControl.ControlMode.PercentOutput, _gamepad.GetAxis(1) + _gamepad.GetAxis(2));
+                Talon2.Set(CTRE.Phoenix.MotorControl.ControlMode.PercentOutput, _gamepad.GetAxis(1) - _gamepad.GetAxis(2));
+
                 pwm_9.Duration = (uint)_gamepad.GetAxis(1) * 50000;
 
                 xButton = _gamepad.GetButton(1);
